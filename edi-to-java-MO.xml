@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<medi:edimap xmlns:medi="http://www.milyn.org/schema/edi-message-mapping-1.3.xsd">
+
+	<medi:description name="PZ" version="1.0" />
+
+	<medi:delimiters segment="&#10;" field=":" component="}" sub-component="~" />
+             
+	<medi:segments xmltag="PZ">
+
+		<medi:segment segcode="TypDok" xmltag="typDok">
+			<medi:field xmltag="typ" />
+		</medi:segment>
+                
+                <medi:segment segcode="NrDok" xmltag="nrDok">
+			<medi:field xmltag="nrDokumentu" />
+		</medi:segment>
+                
+               <!-- <medi:segment segcode="Data" xmltag="data">
+			<medi:field xmltag="data" />
+		</medi:segment>
+                
+                <medi:segment segcode="Magazyn" xmltag="mag">
+                        <medi:field xmltag="numerMagazynu" />
+		</medi:segment>
+                
+                <medi:segment segcode="SposobPlatn" xmltag="sposobPlatn">
+                        <medi:field xmltag="sposobPlatnosci" />
+		</medi:segment>
+                
+                <medi:segment segcode="TerminPlatn" xmltag="termPlat">
+                        <medi:field xmltag="terminPlatnosci" />
+		</medi:segment>
+                
+                <medi:segment segcode="IndeksCentralny" xmltag="index">
+                        <medi:field xmltag="indeksCentralny" />
+		</medi:segment>
+                
+                <medi:segment segcode="NazwaWystawcy" xmltag="nazwaWystawcy">
+                        <medi:field xmltag="nazwaWystawcy" />
+		</medi:segment>
+                
+                <medi:segment segcode="AdresWystawcy" xmltag="adres">
+                        <medi:field xmltag="adresWystawcy" />
+		</medi:segment>
+                
+                <medi:segment segcode="KodWystawcy" xmltag="kodPoczta">
+                        <medi:field xmltag="kodWystawcy" />
+		</medi:segment>
+                
+                <medi:segment segcode="MiastoWystawcy" xmltag="miasto">
+                        <medi:field xmltag="miastoWystawcy" />
+		</medi:segment>
+                
+                <medi:segment segcode="UlicaWystawcy" xmltag="ul">
+                        <medi:field xmltag="ulicaWystawcy" />
+		</medi:segment>
+                
+                <medi:segment segcode="NIPWystawcy" xmltag="nip">
+                        <medi:field xmltag="NIPwystawcy" />
+		</medi:segment>
+                
+                <medi:segment segcode="BankWystawcy" xmltag="bank">
+                        <medi:field xmltag="bankWystawcy" />
+		</medi:segment>
+                
+                <medi:segment segcode="KontoWystawcy" xmltag="konto">
+                        <medi:field xmltag="kontoWystawcy" />
+		</medi:segment>
+                
+                <medi:segment segcode="TelefonWystawcy" xmltag="tel">
+                        <medi:field xmltag="telefonWystawcy" />
+		</medi:segment>
+                
+                <medi:segment segcode="NrWystawcyWSieciSklepow" xmltag="nrWys">
+                        <medi:field xmltag="nrWystawcyWSieciSklepow" />
+		</medi:segment>
+                
+                <medi:segment segcode="NrWystawcyObcyWSieciSklepow" xmltag="nrWysObcy">
+                        <medi:field xmltag="nrWystawcyObcyWSieciSklepow" />
+		</medi:segment>
+                
+                <medi:segment segcode="IloscLinii" xmltag="ilLinii">
+                        <medi:field xmltag="iloscLinii" />
+		</medi:segment>
+                -->
+
+                <medi:segment segcode="Linia" xmltag="pozycja-item" maxOccurs="-1">
+			<medi:field xmltag="pole" />
+		</medi:segment>
+
+<!--
+		<medi:segment segcode="Linia" xmltag="poz">
+                    <medi:field xmltag="linia" />
+				<medi:component xmltag="kod" />
+                                <medi:component xmltag="vat" />
+                                <medi:component xmltag="jm" />
+                                <medi:component xmltag="asortyment" />
+                                <medi:component xmltag="sww" />
+                                <medi:component xmltag="pKWiU" />
+                                <medi:component xmltag="ilosc" />
+                                <medi:component xmltag="cena" />
+                                <medi:component xmltag="wartosc" />
+                                <medi:component xmltag="ileWOpak" />
+                                <medi:component xmltag="cenaSp" />
+                                <medi:component xmltag="towId" />
+                    </medi:field>            
+		</medi:segment>
+                -->
+                <!--
+                
+                
+                <medi:segment segcode="Stawka" xmltag="stawka">
+			<medi:field xmltag="podsumowanie" />
+				<medi:component xmltag="Stawka" />
+				<medi:component xmltag="SumaNet" />
+                                <medi:component xmltag="SumaVat" />
+			</medi:field>
+		</medi:segment>
+                
+                
+                <medi:segment segcode="DoZaplaty" xmltag="doZap">
+                        <medi:field xmltag="doZaplaty" />
+		</medi:segment>-->
+
+
+	</medi:segments>
+	
+</medi:edimap>
